@@ -43,7 +43,7 @@ export async function getStaticProps() {
           id: meetup._id.toString(),
         })),
       },
-      revalidate: 100,
+      revalidate: 1,
     };
   } catch (error) {
     console.log(error);
@@ -60,7 +60,7 @@ export async function getStaticProps() {
           },
         ],
       },
-      revalidate: 100,
+      revalidate: 1,
     };
   }
 }
